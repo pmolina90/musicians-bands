@@ -1,5 +1,4 @@
-const { db, DataTypes, Model } = require('sequelize');
-const {Sequelize, sequelize} = require('../db');
+const { db, DataTypes, Model } = require('../db');
 
 // TODO - define the Song model
 class Song extends Model {};
@@ -9,7 +8,7 @@ Song.init({
     year: DataTypes.INTEGER,
     length: DataTypes.INTEGER
 }, {
-    Sequelize: db,
+    sequelize: db,
     modelName: "Song"
 });
 
