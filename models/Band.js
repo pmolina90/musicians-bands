@@ -1,7 +1,6 @@
-const {Sequelize, sequelize, db, DataTypes, Model} = require('../db');
+const { db, DataTypes, Model} = require('../db');
 
 // TODO - define the Band model
-let Band;
 
 class Band extends Model {}
 
